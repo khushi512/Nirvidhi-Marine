@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Nirvidhi Marine"
+version = "1.0.0"
+id = "artifacts/nirvidhi-marine"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25262
+
+[services.development]
+run = "pnpm --filter @workspace/nirvidhi-marine run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nirvidhi-marine", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/nirvidhi-marine/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25262"
+BASE_PATH = "/"
