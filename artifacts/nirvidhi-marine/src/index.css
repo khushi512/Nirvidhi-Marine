@@ -58,6 +58,39 @@
   --app-font-serif: 'Fraunces', serif;
 }
 
+/* Alternating section themes — Hero & Navbar stay on the global dark palette above */
+.theme-dark {
+  --background: 216 82% 4%;
+  --foreground: 217 40% 92%;
+  --border: 216 45% 18%;
+  --input: 216 45% 18%;
+  --ring: 186 100% 50%;
+  --primary: 186 100% 50%;
+  --primary-foreground: 186 100% 6%;
+  --secondary: 215 54% 11%;
+  --secondary-foreground: 217 40% 92%;
+  --muted: 215 54% 11%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 45 100% 51%;
+  --accent-foreground: 45 100% 5%;
+}
+
+.theme-light {
+  --background: 40 33% 97%;
+  --foreground: 217 45% 10%;
+  --border: 217 20% 85%;
+  --input: 217 20% 85%;
+  --ring: 195 85% 32%;
+  --primary: 195 85% 32%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217 25% 93%;
+  --secondary-foreground: 217 45% 10%;
+  --muted: 217 25% 93%;
+  --muted-foreground: 217 15% 38%;
+  --accent: 38 85% 40%;
+  --accent-foreground: 0 0% 100%;
+}
+
 @layer base {
   * {
     @apply border-border;

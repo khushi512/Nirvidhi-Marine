@@ -1,4 +1,4 @@
-import logo from "@/assets/nirvidhi-logo-transparent.png";
+import logo from "@/assets/nirvidhi-logo.jpg";
 
 export function Footer() {
   return (
@@ -6,9 +6,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="md:col-span-2">
-            <div className="inline-block bg-foreground/95 rounded-md px-6 py-4 mb-8">
-              <img src={logo} alt="Nirvidhi Marine" className="h-24 w-auto" />
-            </div>
+            {/*<div className="inline-block bg-foreground/95 rounded-md px-6 py-4 mb-8">
+            </div>*/}
+            <img src={logo} alt="Nirvidhi Marine" className="h-20 w-auto mb-8 rounded-sm" />
             <p className="text-muted-foreground text-sm max-w-sm leading-loose">
               Building India's underwater workforce and the offshore technology base to support the blue economy.
             </p>
@@ -30,8 +30,8 @@ export function Footer() {
               <li className="pt-2">
                 <a href="tel:+919969277362" className="hover:text-primary transition-colors">+91 99692 77362</a>
               </li>
-              <li className="text-primary hover:text-white transition-colors">
-                <a href="mailto:bhupisig638@gmail.com">bhupisig638@gmail.com</a>
+              <li className=" hover:text-primary transition-colors">
+                <a href="mailto:info@nirvidhimarine.com">info@nirvidhimarine.com</a>
               </li>
             </ul>
           </div>
